@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+.weather_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75vh;
+    height: 45vh;
+    background-color: rgba(102, 110, 117, 0.418);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 1vh;
+    font-family: Dosis, sans-serif;
+
+    .weatherData {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        h2 {
+            margin: 0 1vh 0 0;
+        }
+        h4 {
+            margin: 0 1vh 0 0;
+        }
+    }
+   .imgData{ 
+    display: flex;
+    justify-content: center;
+    margin: 0 0 2vh 0;
+    .weatherImage {
+        width: 30vh;
+    }
+   }
+
+   .footerData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+    
+}

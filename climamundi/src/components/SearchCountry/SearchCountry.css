@@ -1,0 +1,23 @@
+.search_country {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+}
+.search_country input {
+  margin: 1vh;
+  padding: 1vh;
+  height: 3vh;
+  width: 30vh;
+  border-radius: 1vh;
+  border: 2px solid aliceblue;
+  background-color: rgba(240, 248, 255, 0.322);
+}
+.search_country button {
+  height: 3vh;
+  width: 30vh;
+  border-radius: 1vh;
+  border: 2px solid aliceblue;
+  background-color: rgba(240, 248, 255, 0.322);
+  color: aliceblue;
+}/*# sourceMappingURL=SearchCountry.css.map */
