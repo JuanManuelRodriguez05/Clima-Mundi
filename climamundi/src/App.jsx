@@ -18,9 +18,6 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<WeatherDetails  />} />
-        
-
-        
       </Routes>
 
     </BrowserRouter>

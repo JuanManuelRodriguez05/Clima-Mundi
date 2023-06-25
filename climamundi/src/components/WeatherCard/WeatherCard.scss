@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+@import "../breakpoints/breakpoints.scss";
 
 .weather_card {
     display: flex;
@@ -20,23 +21,92 @@
         h2 {
             margin: 0 1vh 0 0;
         }
+
         h4 {
             margin: 0 1vh 0 0;
         }
     }
-   .imgData{ 
-    display: flex;
-    justify-content: center;
-    margin: 0 0 2vh 0;
-    .weatherImage {
-        width: 30vh;
-    }
-   }
 
-   .footerData{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   }
-    
+    .imgData {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2vh 0;
+
+        .weatherImage {
+            width: 30vh;
+        }
+    }
+
+    .footerData {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+.weather_card {
+
+    @media (max-width: $breakpoint-sm) {
+        width: 45vh;
+        height: 60vh;
+
+        .weatherData {
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                margin: 0 0 1vh 0;
+                font-size: 1.5vh;
+            }
+
+            h2 {
+                margin: 0 0 1vh 0;
+            }
+        }
+
+        .footerData {
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                margin: 0 0 1vh 0;
+            }
+        }
+
+    }
+
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+        width: 50vh;
+        height: 60vh;
+
+
+        .weatherData {
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                margin: 0 0 1vh 0;
+            }
+
+            h2 {
+                margin: 0 0 1vh 0;
+            }
+        }
+
+        .footerData {
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+                margin: 0 0 1vh 0;
+            }
+        }
+    }
+
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+        padding: 1vh;
+        width: 80vh;
+      }
+
 }

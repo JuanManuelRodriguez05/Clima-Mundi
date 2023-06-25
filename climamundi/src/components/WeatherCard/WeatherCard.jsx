@@ -3,8 +3,8 @@ import "../WeatherCard/WeatherCard.scss"
 const WeatherCard = ({ data }) => {
 
     let image =
-        data.temp <= 0 ? "cloud-snow.svg" :
-        data.temp >= 1 && data.temp <= 15 ? "cloud.svg" :
+        data.temp <= 3 ? "cloud-snow.svg" :
+        data.temp >= 4 && data.temp <= 15 ? "cloud.svg" :
         data.temp >= 16 && data.temp <= 25 ? "cloud.svg" :
         data.temp > 25 ? "sun.svg" : ""
 

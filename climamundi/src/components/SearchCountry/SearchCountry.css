@@ -14,10 +14,25 @@
   background-color: rgba(240, 248, 255, 0.322);
 }
 .search_country button {
-  height: 3vh;
-  width: 30vh;
-  border-radius: 1vh;
-  border: 2px solid aliceblue;
-  background-color: rgba(240, 248, 255, 0.322);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
   color: aliceblue;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 30vh;
+  height: 3vh;
+  font-weight: bold;
+  border: 2px solid aliceblue;
+  transition: 0.3s;
+  box-shadow: 0px 6px 0px -2px rgb(3, 109, 196);
+  background-color: rgba(59, 167, 255, 0.5490196078);
+}
+.search_country button:hover {
+  box-shadow: 0 0 #fff;
+  transform: translateY(1px);
+  background-color: aliceblue;
+  color: rgb(90, 178, 255);
 }/*# sourceMappingURL=SearchCountry.css.map */
